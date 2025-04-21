@@ -47,7 +47,6 @@ An advanced, interactive, and full-featured CPU Scheduling Simulator built using
 ## 📁 Folder Structure
 - public/
 - src/
-  - Fix: Handle undefined processId in StepByStepSimulation
 -.gitignore
 - README.md
 - bun.lockb
