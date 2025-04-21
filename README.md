@@ -64,7 +64,7 @@ An advanced, interactive, and full-featured CPU Scheduling Simulator built using
 
 ## 🤝 Contributors
 
-- Saurabh(# https://github.com/dashboard)
+- Saurabh(https://github.com/dashboard)
 - Manohar
 - Lalit Singh
 
