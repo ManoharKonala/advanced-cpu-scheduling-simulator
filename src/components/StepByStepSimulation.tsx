@@ -17,7 +17,8 @@ const StepByStepSimulation: React.FC<StepByStepSimulationProps> = ({ results }) 
   const [animationSpeed, setAnimationSpeed] = useState(1); // seconds per step
   const [visibleGantt, setVisibleGantt] = useState<GanttChartItem[]>([]);
   
-  const totalSteps = results.ganttChart.length;
+  // Safety check - ensure ganttChart is not empty
+  const totalSteps = results.ganttChart?.length || 0;
   
   // Effect for handling animation playback
   useEffect(() => {
@@ -41,8 +42,10 @@ const StepByStepSimulation: React.FC<StepByStepSimulationProps> = ({ results }) 
   
   // Update visible portion of Gantt chart based on current step
   useEffect(() => {
-    if (results.ganttChart.length > 0) {
+    if (results.ganttChart && results.ganttChart.length > 0) {
       setVisibleGantt(results.ganttChart.slice(0, currentStep + 1));
+    } else {
+      setVisibleGantt([]);
     }
   }, [currentStep, results.ganttChart]);
   
@@ -61,6 +64,15 @@ const StepByStepSimulation: React.FC<StepByStepSimulationProps> = ({ results }) 
       setCurrentStep(currentStep - 1);
     }
   };
+
+  // Safety check - if no gantt chart data is available, show a message
+  if (!results.ganttChart || results.ganttChart.length === 0) {
+    return (
+      <div className="p-6 text-center">
+        <p className="text-gray-500">No simulation data available to display.</p>
+      </div>
+    );
+  }
   
   return (
     <div className="space-y-4">
@@ -128,25 +140,25 @@ const StepByStepSimulation: React.FC<StepByStepSimulationProps> = ({ results }) 
       </div>
       
       {/* Current step details */}
-      {visibleGantt.length > 0 && (
+      {visibleGantt.length > 0 && currentStep < visibleGantt.length && (
         <Card>
           <CardContent className="pt-6">
             <h3 className="font-medium mb-2">Current Process</h3>
             <div className="grid grid-cols-2 gap-4">
               <div>
                 <p className="text-sm text-gray-500">Process ID</p>
-                <p className="font-medium">{visibleGantt[currentStep].processId}</p>
+                <p className="font-medium">{visibleGantt[currentStep]?.processId || 'N/A'}</p>
               </div>
               <div>
                 <p className="text-sm text-gray-500">Time Interval</p>
                 <p className="font-medium">
-                  {visibleGantt[currentStep].startTime} - {visibleGantt[currentStep].endTime}
+                  {visibleGantt[currentStep]?.startTime || 0} - {visibleGantt[currentStep]?.endTime || 0}
                 </p>
               </div>
               <div>
                 <p className="text-sm text-gray-500">Duration</p>
                 <p className="font-medium">
-                  {visibleGantt[currentStep].endTime - visibleGantt[currentStep].startTime} time units
+                  {(visibleGantt[currentStep]?.endTime || 0) - (visibleGantt[currentStep]?.startTime || 0)} time units
                 </p>
               </div>
             </div>
