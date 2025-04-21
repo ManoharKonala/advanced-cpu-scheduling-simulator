@@ -1,45 +1,49 @@
-# ⚙ Advanced CPU Scheduling Simulator
+# ⚙️ Advanced CPU Scheduling Simulator
 
-An advanced, interactive, and full-featured CPU Scheduling Simulator built using *Vite, **React, **TypeScript, **TailwindCSS, and **shadcn/ui*. Designed for Computer Science students, educators, and professionals, this tool provides both real-time and step-by-step simulation of core CPU scheduling algorithms, with rich visualizations and performance statistics.
+A fully-featured, interactive CPU Scheduling Simulator built with modern web technologies including *Vite*, **React**, **TypeScript**, **Tailwind CSS**, and **shadcn/ui**. This tool is designed for Computer Science students, educators, and professionals to simulate and visualize various CPU scheduling algorithms in real-time or step-by-step modes, along with comprehensive performance metrics.
 
 ---
 
 ## 🚀 Tech Stack
 
-- *Frontend Framework*: [React](https://react.dev/)
-- *Build Tool*: [Vite](https://vitejs.dev/)
-- *Styling*: [Tailwind CSS](https://tailwindcss.com/)
-- *UI Components*: [shadcn/ui](https://ui.shadcn.com/)
-- *Language*: TypeScript
+- **Frontend Framework**: [React](https://react.dev/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **UI Components**: [shadcn/ui](https://ui.shadcn.com/)
+- **Language**: TypeScript
 
 ---
 
-## 🎯 Features
+## 🎯 Key Features
 
-- 🎛 *Algorithm Selector*  
-  Choose from First Come First Serve (FCFS), Shortest Job First (SJF) (Preemptive & Non-Preemptive), Priority Scheduling (Preemptive & Non-Preemptive), and Round Robin.
+- 🎛 **Algorithm Selector**  
+  Supports core CPU scheduling algorithms:
+  - First Come First Serve (FCFS)
+  - Shortest Job First (SJF) – Preemptive & Non-Preemptive
+  - Priority Scheduling – Preemptive & Non-Preemptive
+  - Round Robin (with configurable time quantum)
 
-- ➕ *Add/Delete Processes*  
+- ➕ **Add/Delete Processes**  
   Dynamically add or remove processes with attributes like PID, Arrival Time, Burst Time, Priority, and I/O Burst Time.
 
-- 🕒 *Context Switching Time*  
+- 🕒 **Context Switching Time**  
   Option to specify realistic context switch overheads.
 
-- 🔄 *Simulation Modes*  
-  - *Instant Execution*: Run the simulation immediately.
-  - *Step-by-Step Mode*: Visualize scheduling decisions frame-by-frame.
+- 🔄 **Simulation Modes**  
+  - *Instant Execution*: Run the simulation immediately.  
+  - *Step-by-Step Mode*: Visualize scheduling decisions frame-by-frame.  
   - *Multi-Algorithm Comparison*: Analyze performance metrics across multiple algorithms side-by-side.
 
-- 📊 *Gantt Chart Visualization*  
+- 📊 **Gantt Chart Visualization**  
   Dynamic, real-time Gantt chart to visualize process execution timeline.
 
-- 📈 *Statistics Dashboard*  
+- 📈 **Statistics Dashboard**  
   Displays average waiting time, turnaround time, response time, throughput, and CPU utilization.
 
-- 📤 *Export Options*  
+- 📤 **Export Options**  
   Export simulation reports as PDF, CSV, or PNG.
 
-- ♻ *Reset Simulation*  
+- ♻ **Reset Simulation**  
   Clear the simulation and start over with a fresh setup.
 
 ---
@@ -60,25 +64,23 @@ An advanced, interactive, and full-featured CPU Scheduling Simulator built using
 - tsconfig.app.json
 - tsconfig.json
 - tsconfig.node.json
-- vite.config.ts
+- vite.config.ts
 
-## 🤝 Contributors
-
-- Saurabh(https://github.com/saurabh2728)
-- Manohar(https://github.com/ManoharKonala)
-- Lalit Singh(https://github.com/Geltrax69)
-
+  
 ---
 
-## 📜 License
-
-This project is licensed under the [MIT License](LICENSE). See the [LICENSE](LICENSE) file for details.
-
----
-
-## 📝 Installation
+## 🛠 Installation & Setup
 
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/advanced-cpu-scheduling-simulator.git
    cd advanced-cpu-scheduling-simulator
+
+## Contributors
+- Saurabh
+- Manohar
+- Lalit Singh
+
+## 📜 License
+
+This project is licensed under the [MIT License](LICENSE). See the [LICENSE](LICENSE) file for details.
