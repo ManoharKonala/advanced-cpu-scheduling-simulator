@@ -69,6 +69,10 @@ A fully-featured, interactive CPU Scheduling Simulator built with modern web tec
   
 ---
 
+![image](https://github.com/user-attachments/assets/add6c531-34ca-41c1-abcf-469c9e17f31c)
+
+
+
 ## 🛠 Installation & Setup
 
 1. Clone the repository:
