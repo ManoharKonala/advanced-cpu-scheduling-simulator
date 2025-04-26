@@ -242,7 +242,7 @@ npm run dev
       <td align="center" width="33%">
         <div style="border-radius:50%; overflow:hidden; width:150px; height:150px; margin:0 auto;">
           <a href="https://github.com/saurabh69">
-            <img src="https://via.placeholder.com/150" width="150px" style="border-radius:50%" alt="Saurabh"/>
+            <img src="https://github.com/saurabh69.png?size=150" width="150px" style="border-radius:50%" alt="Saurabh"/>
           </a>
         </div>
         <h3 style="margin:10px 0 5px">Saurabh</h3>
@@ -250,7 +250,7 @@ npm run dev
       <td align="center" width="33%">
         <div style="border-radius:50%; overflow:hidden; width:150px; height:150px; margin:0 auto;">
           <a href="https://github.com/ManoharKonala">
-            <img src="https://via.placeholder.com/150" width="150px" style="border-radius:50%" alt="Manohar"/>
+            <img src="https://github.com/ManoharKonala.png?size=150" width="150px" style="border-radius:50%" alt="Manohar"/>
           </a>
         </div>
         <h3 style="margin:10px 0 5px">Manohar</h3>
@@ -258,7 +258,7 @@ npm run dev
       <td align="center" width="33%">
         <div style="border-radius:50%; overflow:hidden; width:150px; height:150px; margin:0 auto;">
           <a href="https://github.com/Geltrax69">
-            <img src="https://via.placeholder.com/150" width="150px" style="border-radius:50%" alt="Lalit Singh"/>
+            <img src="https://github.com/Geltrax69.png?size=150" width="150px" style="border-radius:50%" alt="Lalit Singh"/>
           </a>
         </div>
         <h3 style="margin:10px 0 5px">Lalit Singh</h3>
